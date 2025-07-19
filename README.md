@@ -2,17 +2,59 @@
 This Python application provides a persistent, personalized chatbot session with Redis saving chat history, and LangChain controlling interaction with the language model. The experience is entirely managed by Redis, thus when User 'x' starts a session, it can be accessed by the 'x' User and the chat history would be pulled from Redis. Therefore, personalized conversations are possible, even after stopping the app and restarting it.  
 
 📦 Features  
-✅ Chat History saved to Redis by User id  
-✅ Stateful conversation using RunnableWithMessageHistory  
-✅ Connects to Groq's llama3-8b-8192 with LangChain  
-✅ Command line interface  
-✅ Can resume previous session  
-✅ Easy to modify and can support other Users orbacks
+- Chat History saved to Redis by User id  
+- Stateful conversation using RunnableWithMessageHistory  
+-  Connects to Groq's llama3-8b-8192 with LangChain  
+- Command line interface  
+- Can resume previous session  
+- Easy to modify and can support other Users orbacks
 
-A. How to Setup Environment
+### A. How to Setup Virtual Environment
+# a. Using pipenv
 
+1. Install Pipenv (if not already installed):
+```
+pip install pipenv
+```
+2. Install Dependencies with Pipenv:
+```
+pipenv install
+```
+3. Activate the Virtual Environment:
+```
+pipenv shell
+```
 
-B. How to Setup Environment and Redis 
+# b. Using pip and venv
+
+1. Create Virtual Environment
+```
+python-m venv venv
+```
+2. Activate the Virtual Environment on:
+
+   i. Windows Operating System
+      ```
+      venv\Scripts\activate
+      ```
+
+   ii. MacOS or Linux Operating System
+      ```
+      source venv/bin/activate
+      ```
+# c. Using conda
+
+1. Create Conda Environment
+```
+conda create-name myenv python=3.11
+```
+
+2. Activate the Virtual Environment
+```
+conda activate myenv
+```
+
+### B. How to Setup Environment and Redis 
 1) Pull Redis Docker Image
 ```
 docker pull redis/redis-stack:latest
