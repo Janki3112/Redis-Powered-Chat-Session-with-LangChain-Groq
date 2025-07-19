@@ -54,7 +54,7 @@ conda create-name myenv python=3.11
 conda activate myenv
 ```
 
-# B. How to Setup Environment and Redis 
+# B. How to Setup Redis with Docker
 1) Pull Redis Docker Image
 ```
 docker pull redis/redis-stack:latest
