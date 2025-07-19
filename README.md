@@ -1,4 +1,4 @@
-### Chat Session with LangChain & Groq Using Redis 
+# Chat Session with LangChain & Groq Using Redis 
 This Python application provides a persistent, personalized chatbot session with Redis saving chat history, and LangChain controlling interaction with the language model. The experience is entirely managed by Redis, thus when User 'x' starts a session, it can be accessed by the 'x' User and the chat history would be pulled from Redis. Therefore, personalized conversations are possible, even after stopping the app and restarting it.  
 
 📦 Features  
@@ -9,8 +9,8 @@ This Python application provides a persistent, personalized chatbot session with
 - Can resume previous session  
 - Easy to modify and can support other Users orbacks
 
-### A. How to Setup Virtual Environment
-# a. Using pipenv
+# A. How to Setup Virtual Environment
+## a. Using pipenv
 
 1. Install Pipenv (if not already installed):
 ```
@@ -25,7 +25,7 @@ pipenv install
 pipenv shell
 ```
 
-# b. Using pip and venv
+## b. Using pip and venv
 
 1. Create Virtual Environment
 ```
@@ -42,7 +42,7 @@ python-m venv venv
       ```
       source venv/bin/activate
       ```
-# c. Using conda
+## c. Using conda
 
 1. Create Conda Environment
 ```
@@ -54,7 +54,7 @@ conda create-name myenv python=3.11
 conda activate myenv
 ```
 
-### B. How to Setup Environment and Redis 
+# B. How to Setup Environment and Redis 
 1) Pull Redis Docker Image
 ```
 docker pull redis/redis-stack:latest
@@ -79,7 +79,7 @@ http://localhost:8001
 
 Make sure you have an API key for Groq (saved as GROQ_API_KEY in the environment (in .env file))  
 
-🚀 How to Run
+# 🚀 How to Run
 Run the script:  
 ```
 python redis_chat_with_history.py
@@ -98,7 +98,7 @@ At any moment in your session, you can exit with:
 ```  
 In Redis, your entire conversation regarding the UserID will have been saved. When the app is run again for the same User id, the conversational history could be resumed.  
 
-🧩 Code Structure  
+# 🧩 Code Structure  
 
 | Step      | Functionality                        |
 |-----------|-------------------------------------|
