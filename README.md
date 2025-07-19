@@ -9,17 +9,33 @@ This Python application provides a persistent, personalized chatbot session with
 ✅ Can resume previous session  
 ✅ Easy to modify and can support other Users orbacks
 
+A. How to Setup Environment
 
 
+B. How to Setup Environment and Redis 
+1) Pull Redis Docker Image
+```
+docker pull redis/redis-stack:latest
+```
+2) Run the Redis Stack Server
+Note: Make sure Redis is running locally on localhost:6379  
+You can get docker image for redis allot default port (6379) to it and for Redis UI allot port (8001)
 
-🚀 How to Setup Environment and Redis 
-updated soon...
+```
+docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+```
+3) Verify Installation
+```
+docker ps
+```
+4) Visit the UI
+Open your browser and go to:
+```
+http://localhost:8001
+```
 
 
-Make sure Redis is running locally on localhost:6379  
-- You can get docker image for redis allot default port (6379) to it and for Redis UI allot port (8001)
-
-Make sure you have an API key for Groq (saved as GROQ_API_KEY in the environment)  
+Make sure you have an API key for Groq (saved as GROQ_API_KEY in the environment (in .env file))  
 
 🚀 How to Run
 Run the script:  
