@@ -60,6 +60,7 @@ conda activate myenv
 docker pull redis/redis-stack:latest
 ```
 2) Run the Redis Stack Server
+
 Note: Make sure Redis is running locally on localhost:6379  
 You can get docker image for redis allot default port (6379) to it and for Redis UI allot port (8001)
 
