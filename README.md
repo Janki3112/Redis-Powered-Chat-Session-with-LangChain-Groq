@@ -81,19 +81,25 @@ http://localhost:8001
 Make sure you have an API key for Groq (saved as GROQ_API_KEY in the environment (in .env file))  
 
 # 🚀 How to Run
-Run the script:  
+1) Activate Virtual Environment
+2) Check redis docker container is up
+3) Install all requirements
+```
+pip install -r requirements.py
+```
+4) Run the script:  
 ```
 python redis_chat_with_history.py
 ```  
-When prompted, enter your User id. For example: 
+5) When prompted, enter your User id. For example: 
 ```
 👤 Please enter your User ID: user_123
 ```  
-You can now ask questions: 
+6) You can now ask questions: 
 ```
 >>>> What is the capital of Japan?
 ```  
-At any moment in your session, you can exit with: 
+7) At any moment in your session, you can exit with: 
 ```
 >>>> exit
 ```  
