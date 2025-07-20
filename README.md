@@ -106,15 +106,22 @@ python redis_chat_with_history.py
 ## Outputs
 ### On VS Code
 1) For user 1
+   
 <img width="911" height="645" alt="{DCEFA555-0B30-4BD0-9F77-9600AAEFBBC9}" src="https://github.com/user-attachments/assets/b93762b3-85ac-4f03-9dd1-c75bc339a1fb" />
-2) For user 2
+
+3) For user 2
+
 <img width="897" height="615" alt="{F224E521-A25F-48D1-98C9-086F2B7EA711}" src="https://github.com/user-attachments/assets/20ec23ea-0c16-45dd-9841-69cc7330b152" />
 
 ### On Redis Server
 <img width="956" height="1019" alt="{594DBF9B-255A-42A6-ACBD-01937EA744E3}" src="https://github.com/user-attachments/assets/f1059e02-b753-48b0-b27e-eabc4d0768c3" />
+
 1) Human Query
+   
 <img width="908" height="597" alt="{8BC5154D-96E8-49CF-87D6-56DE6AA39F18}" src="https://github.com/user-attachments/assets/67ec3f20-2810-4ded-a51e-3bfe23e297f7" />
-2) Ai Response
+
+3) Ai Response
+   
 <img width="940" height="635" alt="{7EF9614B-DA9F-4247-82DE-F38A1618A73D}" src="https://github.com/user-attachments/assets/0afab342-fc32-44a8-b854-721e5505ca81" />
 
 In Redis, your entire conversation regarding the UserID will have been saved. When the app is run again for the same User id, the conversational history could be resumed.  
